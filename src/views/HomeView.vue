@@ -38,7 +38,7 @@
           </p>
           <div
             class="product__img"
-            :style="{ 'background-image': 'url(' + item.image + ')' }"
+            :style="inlineBgImage(`${require(`@/assets/images/${item.image}.jpg`)}`)"
           >
             <div></div>
           </div>
@@ -60,35 +60,42 @@ export default {
         {
           enTitle: 'FABRIC',
           title: '布料',
-          image: 'https://shuhuiyun.github.io/huaraytest/dist/img/fabric.1efca107.jpg',
+          image: 'fabric',
         },
         {
           enTitle: 'Medical protection',
           title: '醫療防護',
-          image: 'https://shuhuiyun.github.io/huaraytest/dist/img/medical.c1917273.jpg',
+          image: 'medical',
         },
         {
           enTitle: 'Seamless',
           title: '一體成型',
-          image: 'https://shuhuiyun.github.io/huaraytest/dist/img/seamless.79575c6d.jpg',
+          image: 'seamless',
         },
         {
           enTitle: 'Shoe material',
           title: '鞋材',
-          image: 'https://shuhuiyun.github.io/huaraytest/dist/img/shoe.d029678d.jpg',
+          image: 'shoe',
         },
         {
           enTitle: 'Hosiery',
           title: '襪類',
-          image: 'https://shuhuiyun.github.io/huaraytest/dist/img/hosiery.713f6c33.jpg',
+          image: 'hosiery',
         },
         {
           enTitle: 'Band',
           title: '織帶',
-          image: 'https://shuhuiyun.github.io/huaraytest/dist/img/band.c1c3c861.jpg',
+          image: 'band',
         },
       ],
     };
+  },
+  methods: {
+    inlineBgImage(num) {
+      return {
+        backgroundImage: `url("${num}")`,
+      };
+    },
   },
 };
 </script>

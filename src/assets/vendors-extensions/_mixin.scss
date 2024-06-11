@@ -1,0 +1,10 @@
+@use '../vendors/bootstrap' as *;
+@mixin logo($logo-img: url('@/assets/images/footer-logo.png')) {
+  background-image: $logo-img;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  text-indent: 101%; /*首行縮排到超過100%*/
+  overflow: hidden; /*超過div的範圍就隱藏*/
+  white-space: nowrap; /*不斷行*/
+}

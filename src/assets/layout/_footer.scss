@@ -1,0 +1,109 @@
+@use '../vendors-extensions/mixin' as *;
+@use '../vendors/bootstrap' as *;
+
+@mixin link($text: 16px) {
+  font-size: $text;
+  a {
+    color: rgb(255, 255, 255, 0.65);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  a:hover {
+    color: #fff;
+  }
+}
+
+footer {
+  letter-spacing: 1px;
+  background-color: #0b0b0b;
+  padding: 60px 10%;
+  > div {
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 1220px) {
+      flex-direction: column;
+    }
+  }
+  .footer__logo {
+    height: 60px;
+    width: 195px;
+    @include logo();
+  }
+  .copyright {
+    font-size: 13px;
+    color: rgb(255, 255, 255, 0.65);
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+// 第一個list
+.footer__list-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.footer__list {
+  max-height: 280px;
+  color: rgb(255, 255, 255, 0.65);
+  > div {
+    margin: 4px 0px;
+    margin-right: 5vw;
+  }
+  li {
+    flex-wrap: wrap;
+    margin: 4px 0px;
+    margin-right: 5vw;
+    @include link(16px);
+  }
+  @include media-breakpoint-down(lg) {
+    max-height: none;
+  }
+}
+
+.footer__subList {
+  li {
+    @include link(14px);
+    margin: 8px 0px;
+    &::before {
+      content: '- ';
+    }
+  }
+}
+
+// 第二個list
+.listBox {
+  li {
+    @include link(14px);
+    margin: 8px 0px;
+    margin-right: 5vw;
+  }
+}
+
+.mobile-menu {
+  background-color: #a51f24;
+  width: 100%;
+  display: block;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
+.footer__mobile-link {
+  a {
+    opacity: 0.5;
+    font-size: 14px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+    &:hover {
+      opacity: 1;
+    }
+    &.active {
+      opacity: 1 !important;
+      color: aqua;
+    }
+  }
+}

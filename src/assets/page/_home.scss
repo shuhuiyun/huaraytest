@@ -1,0 +1,138 @@
+@use '../vendors/bootstrap' as *;
+.text--red {
+  color: #c30d23;
+}
+.product__list {
+  padding: 0;
+  padding-bottom: 66.6666%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  .product__img {
+    width: 100%;
+    position: absolute;
+    padding-bottom: calc(66.666% + 40px);
+    background-image: url('@/assets/images/fabric.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: -20px;
+    filter: grayscale(100%);
+    transition: all 1s ease-in-out;
+    > div {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: rgba(27, 27, 27, 0.4);
+      z-index: 1;
+    }
+  }
+  &:hover {
+    .product__img {
+      bottom: 0px;
+      filter: grayscale(0%);
+    }
+  }
+  p {
+    text-align: center;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: #fff;
+    z-index: 2;
+    letter-spacing: 1px;
+    span {
+      font-weight: 800;
+      font-size: 1.5em;
+    }
+  }
+}
+@include media-breakpoint-up(sm) {
+  .product__list {
+    padding-bottom: 33.3333%;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .product__list {
+    padding-bottom: 22.2222%;
+  }
+}
+
+.product__title {
+  h2 {
+    background-color: #0b0b0b;
+    padding: 80px 0;
+    padding-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    letter-spacing: 8px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    span {
+      margin-top: 15px;
+      font-size: 1.6em;
+      letter-spacing: 6px;
+      position: relative;
+      &::after {
+        display: block;
+        background: #c30d23;
+        content: '';
+        width: 56px;
+        height: 1px;
+        position: absolute;
+        left: 50%;
+        bottom: -30px;
+        transform: translate(-50%);
+      }
+    }
+  }
+}
+.about {
+  background-image: url('@/assets/images/bg-about.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 210px 5%;
+  .about__title {
+    font-size: 36px;
+    letter-spacing: 10px;
+    margin-bottom: 60px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      background: #c30d23;
+      content: '';
+      width: 56px;
+      height: 1px;
+      bottom: -15px;
+      left: 0;
+    }
+  }
+  h3 {
+    letter-spacing: 10px;
+    color: #fff;
+    font-weight: 100;
+  }
+  p {
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    line-height: 1.8;
+  }
+}
+@include media-breakpoint-up(sm) {
+  .about {
+    padding: 210px 15%;
+  }
+}

@@ -60,32 +60,32 @@ export default {
         {
           enTitle: 'FABRIC',
           title: '布料',
-          image: 'http://localhost:8080/img/fabric.1efca107.jpg',
+          image: 'https://shuhuiyun.github.io/huaraytest/dist/img/fabric.1efca107.jpg',
         },
         {
           enTitle: 'Medical protection',
           title: '醫療防護',
-          image: 'http://localhost:8080/img/medical.c1917273.jpg',
+          image: 'https://shuhuiyun.github.io/huaraytest/dist/img/medical.c1917273.jpg',
         },
         {
           enTitle: 'Seamless',
           title: '一體成型',
-          image: 'http://localhost:8080/img/seamless.79575c6d.jpg',
+          image: 'https://shuhuiyun.github.io/huaraytest/dist/img/seamless.79575c6d.jpg',
         },
         {
           enTitle: 'Shoe material',
           title: '鞋材',
-          image: 'http://localhost:8080/img/shoe.d029678d.jpg',
+          image: 'https://shuhuiyun.github.io/huaraytest/dist/img/shoe.d029678d.jpg',
         },
         {
           enTitle: 'Hosiery',
           title: '襪類',
-          image: 'http://localhost:8080/img/hosiery.713f6c33.jpg',
+          image: 'https://shuhuiyun.github.io/huaraytest/dist/img/hosiery.713f6c33.jpg',
         },
         {
           enTitle: 'Band',
           title: '織帶',
-          image: 'http://localhost:8080/img/band.c1c3c861.jpg',
+          image: 'https://shuhuiyun.github.io/huaraytest/dist/img/band.c1c3c861.jpg',
         },
       ],
     };

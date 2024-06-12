@@ -1,8 +1,7 @@
 <template>
   <div class="home">
-    <div>
-      <h1 class="">測試文字</h1>
-    </div>
+    <!-- swiper -->
+    <VueSwiper />
     <!-- about -->
     <div class="about row m-0">
       <div class="col-lg-7 col-md-10 col-12">
@@ -30,6 +29,7 @@
           v-for="item in product"
           :key="item.title"
           href="#"
+          style="padding-left: 0"
           :aria-label="item.enTitle"
         >
           <p>
@@ -49,12 +49,20 @@
 </template>
 
 <script>
+import VueSwiper from '@/components/HomeSwiper.vue';
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue';
 
 export default {
+  components: {
+    VueSwiper,
+  },
   data() {
     return {
+      slickOptions: {
+        slidesToShow: 3,
+        // Any other options that can be got from plugin documentation
+      },
       item: 'fabric',
       product: [
         {

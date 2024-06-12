@@ -11,9 +11,10 @@
 
   .product__img {
     width: 100%;
+    padding: 0 0 !important;
     position: absolute;
-    padding-bottom: calc(66.666% + 40px);
-   // background-image: url('@/assets/images/fabric.jpg');
+    padding-bottom: calc(66.666% + 40px) !important;
+    // background-image: url('@/assets/images/fabric.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     bottom: -20px;
@@ -129,6 +130,7 @@
     color: rgba(255, 255, 255, 0.85);
     margin: 0;
     line-height: 1.8;
+    text-align: justify;
   }
 }
 @include media-breakpoint-up(sm) {

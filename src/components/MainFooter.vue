@@ -4,7 +4,7 @@
       <div class="d-flex flex-column justify-content-between me-auto">
         <a href="#" class="footer__logo" aria-label="logo"><h2>信榮纖維</h2></a>
         <div class="copyright">
-          © 2019 信榮纖維 Hsinjung Fiber Industry Co., Ltd.
+          © 2024 練習作品 無商業用途
           <br />
           網頁設計 - 華瑞資訊
         </div>

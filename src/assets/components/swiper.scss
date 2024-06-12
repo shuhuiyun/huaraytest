@@ -1,0 +1,126 @@
+@use '../vendors/bootstrap' as *;
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 90vh;
+  width: 100%;
+  padding-left: 5%;
+}
+
+.mySwiper {
+  width: 50vw !important;
+  height: 11vh;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -5vh;
+  right: 0;
+  div {
+    justify-content: end !important;
+  }
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide div {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: 50%;
+}
+.banner__img {
+  display: block;
+  width: 100%;
+  height: 90vh;
+
+  min-height: 500px;
+  position: relative;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.banner__title {
+  letter-spacing: 3px;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  z-index: 100;
+  position: absolute;
+  font-weight: 600;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 48px;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: 25vw;
+    height: auto;
+  }
+  @include media-breakpoint-down(md) {
+    img {
+      width: 50vw;
+      height: auto;
+    }
+  }
+  .banner__subTitle {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
+.banner__list {
+  display: block;
+  width: 100%;
+}
+@include media-breakpoint-down(md) {
+  .banner__title {
+    font-size: 30px;
+    text-wrap: nowrap;
+  }
+}
